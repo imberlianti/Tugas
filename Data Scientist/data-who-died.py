@@ -6,6 +6,8 @@ data = pd.read_csv(url)
 df = pd.DataFrame(data)
 
 res = data[(data["Survived"] == 0)]
-panjang = len(res)
+died = len(res)
 
-print(res.head(panjang))
+print(res.head(died))
+
+print("Banyak Penumpang yang Meninggal = " , str(died) , " orang penumpang")
