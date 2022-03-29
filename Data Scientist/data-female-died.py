@@ -10,5 +10,13 @@ female = res[(res["Sex"] == "female")]
 
 died = len(female)
 
+listCol = female.columns.values.tolist()
+listCol.remove("Survived")
+listCol.remove("PassengerId")
+listCol.remove("Name")
+listCol.remove("Sex")
+listCol.remove("Age")
+
+female = female.drop(listCol, axis = 1)
 print(female.head(died))
 print("Banyak Penumpang Perempuan yang Meninggal = " , str(died) , " orang penumpang")
