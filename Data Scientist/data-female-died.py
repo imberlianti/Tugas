@@ -18,5 +18,7 @@ listCol.remove("Sex")
 listCol.remove("Age")
 
 female = female.drop(listCol, axis = 1)
+female['Survived'] = female['Survived'].replace([0] , 'Died')
+
 print(female.head(died))
 print("Banyak Penumpang Perempuan yang Meninggal = " , str(died) , " orang penumpang")
