@@ -1,6 +1,6 @@
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/imberlianti/Algoritma-Pemrograman/main/Data%20Scientist/train.csv"
+url = "https://raw.githubusercontent.com/imberlianti/Tugas/main/Data%20Scientist/train.csv"
 
 data = pd.read_csv(url)
 df = pd.DataFrame(data)
